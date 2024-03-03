@@ -1,0 +1,297 @@
+*{
+    margin: 0px; 
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(51, 50, 50);
+    height: 44px; 
+    width: 100%;
+    display: flex;
+    color: white;
+ 
+}
+.logo{
+    flex : 73%;
+    margin: 10px;
+    font-family: 'Noto Sans Wancho', sans-serif;
+}
+header nav{
+    flex:28%;    
+}
+nav{
+    display : flex;
+}
+header nav .link{
+    margin: 2px;
+    display: flex;
+    padding: 5px;
+}
+header nav .link:hover{
+    background: rgb(192, 192, 192);
+}
+.image{
+    height: 18px; 
+    margin: 0px 10px 0px 0px;
+    filter: invert(100%) sepia(78%) saturate(2%) hue-rotate(176deg) brightness(105%) contrast(100%);
+}
+header nav .link a{
+    text-decoration: none;
+    font-family: 'Noto Sans Wancho', sans-serif;
+    color: white;
+    display: block;
+}
+
+.banner{ 
+    background:url(./images/background.jpg) no-repeat;
+    background-size: 100% 100%;
+    text-align:center;
+    padding-top:50px;
+    height: 350px;
+    width: 100%;
+    margin :0px;
+}
+.banner h1 ,p{
+    color: rgb(255, 255, 255);
+}
+.banner h1{
+    font-size: 40px;
+    font-family: 'Noto Sans Wancho', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.banner p{
+    padding: 20px 300px ;
+    line-height:29px;
+    font-size: larger;
+}
+.btn1{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.btn1:hover{
+    background: rgb(46, 44, 44);
+}
+.btn2{
+    background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 42px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.btn2:hover{
+    background: rgb(46, 44, 44);
+}
+section .flashCards p{
+    color: gray;
+}
+.flashCards{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px ;
+  
+}
+.card{
+    height: 300px;
+    width: 500px; 
+    border: 0.5px solid rgb(224, 222, 222);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+    padding: 5px;
+}
+.mcard{
+   width: 98%;
+   padding: 2px;
+}
+.f1{
+    display: flex;
+ 
+}
+.f1 h4{
+    margin-left: 30px;
+}
+.profile{
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+  
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin :10px 60px;
+    border-top: 1px solid rgb(182, 178, 178);
+    border-bottom: 1px solid rgb(185, 179, 179);
+}
+.r1{
+    display: flex;
+}
+.r_img{
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.rcontent{
+    padding :20px;
+    font-size: larger;
+}
+.rsection b{
+    color:gray;
+}
+.feature{
+    padding: 20px 70px 20px 70px;
+    display: flex;
+    align-items: center;
+}
+.f_logo{
+    height: 50px;
+    margin: 3%;
+}
+.navigate{
+    display: flex;
+    background-color: rgb(51, 50, 50);
+    padding: 30px;
+    
+}
+.navigate .col a{
+    text-decoration: none;
+    color:rgb(143, 142, 142);
+}
+.navigate .col h5{
+    color:white;
+}
+.list{
+    display: flex;
+    flex:90%;
+}
+.col{
+    padding: 10px 50px 0px 50px;
+}
+.social_main{
+    flex:10%;
+}
+.social{
+    flex:40%;
+}
+.logos{
+    height: 30px;
+}
+
+footer{
+    text-align: right;
+    padding: 0px 40px 10px 0px;
+    background-color: rgb(51, 50, 50);
+    color:rgb(143, 142, 142);
+
+}
+
+
+@media screen and (max-width:1300px){
+    .logo{
+        flex:65%;
+    }
+    header nav{
+        flex:35%;
+    }
+    .banner p{
+        padding: 5px;
+        line-height:19px;
+    }
+    .feature{
+        padding: 10px 30px ;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .f_logo{
+        height: 30px;
+    }
+    .navigate{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list{
+        flex:80%;
+    }
+    .social_main{
+        flex:20%;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width:1020px){
+    .logo{
+        flex:60%;
+    }
+    header nav{
+        flex:40%;
+    }  
+}
+
+@media screen and (max-width:840px){
+    .logo{
+        flex:40%;
+    }
+    header nav{
+        flex:60%;
+    }
+    .flashCards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 450px;
+        width: 700px;
+        margin: 15px;
+        padding: 2px;
+    }
+    .mcard{
+       width: 98%;
+       padding: 2px;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .r1{
+        margin: 5px 30px;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col{
+        flex:25%;
+    }
+   
+  
+
+}
+
+@media screen and (max-width:570px){
+    .logo{
+        flex:20%;
+    }
+    header nav{
+        flex:80%;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .card{
+        height: 280px;
+        width: 700px;
+    }
+  
+    
+}
